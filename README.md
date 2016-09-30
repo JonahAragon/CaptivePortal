@@ -1,6 +1,6 @@
 # Material Captive Portal for Untangle
 
-Custom Material designed captive portal for Untangle firewall installations. This custom web design not only features a Wifi login portal, but a customized download page for clients to easily find and install your root CA.
+Custom Material designed captive portal for Untangle firewall installations. This custom web design not only features a Wifi login portal, but a customized download page for clients to easily find and install your root CA. It's also fully responsive for networks with any number of devices, big or small!
 
 ## Installation
 
