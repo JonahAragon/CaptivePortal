@@ -51,10 +51,31 @@ header {
 div.modal {
   padding: 5%;
   margin-top: -70px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
   background-color: white;
   box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 1500px) {
+  div.modal {
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+  div.modal {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+}
+
+@media (max-width: 570px) {
+  div.modal {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
 }
 
 form {

@@ -12,7 +12,7 @@ Upload these files to your Untangle server! Make sure you replace [`RootCAInstal
 
 ### Wifi Portal login
 
-![](https://i.imgur.com/z5zBNXR.png)
+![](https://i.imgur.com/Umz56wv.png)
 
 ### Certificate download
 
