@@ -1,0 +1,123 @@
+/* BEGIN FONTS */
+
+@font-face {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+src: local('Roboto'), local('Roboto-Regular'), url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+src: local('Roboto Bold'), local('Roboto-Bold'), url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+src: local('Roboto Mono'), local('RobotoMono-Regular'), url(../fonts/Roboto_Mono/RobotoMono-Regular.ttf) format('truetype');
+}
+
+@font-face {
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 700;
+src: local('Roboto Mono Bold'), local('RobotoMono-Bold'), url(../fonts/Roboto_Mono/RobotoMono-Bold.ttf) format('truetype');
+}
+
+/* END FONTS */
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #303F9F;
+  color: #212121;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header {
+  font-family: "Roboto Mono", sans-serif;
+  color: #FFFFFF;
+  background-color: #3F51B5;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  margin: -20px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+main {
+  margin-top: -60px;
+}
+
+h1, h2 {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+::selection {
+  background: #303F9F;
+  color: #FFFFFF;
+}
+
+a {
+  color: #303F9F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #448AFF;
+  text-decoration: underline;
+}
+
+.card {
+  background-color: #FFFFFF;
+  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  outline: none;
+  background-color: #303F9F;
+  color: #FFFFFF;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 3px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+  background-color: #448AFF;
+  color: #FFFFFF;
+  text-decoration: none;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1500px) {
+  .card {
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .card {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+}
+
+@media (max-width: 570px) {
+  .card {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}

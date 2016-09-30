@@ -6,132 +6,42 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Tower Intranet - Install Certificate</title>
+    <title>Install Root Certificate!</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Customized Core CSS -->
+    <link href="css/certinstall.css" rel="stylesheet">
 
 </head>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-certificate"></i> Install Certificate</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about"><i class="fa fa-windows"></i> Windows</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services"><i class="fa fa-apple"></i> iOS</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact"><i class="fa fa-android"></i> Android</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1><i class="fa fa-certificate"></i> Install Certificate</h1>
-                    <a href="#about" class="btn btn-success" role="button"><i class="fa fa-windows"></i> Install for Windows</a>
-                    <a href="#services" class="btn btn-success" role="button"><i class="fa fa-apple"></i> Install for iOS</a>
-                    <a href="#contact" class="btn btn-success" role="button"><i class="fa fa-android"></i> Install for Android</a>
-                    <h4>If you have any problems please contact your administrator at <a href="mailto:support@towerdevs.xyz">support@towerdevs.xyz</a>.</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1><i class="fa fa-windows"></i> Windows</h1>
-                    <a href="cert/RootCAInstaller.exe" class="btn btn-success" role="button">Download Installer</a>
-                    <a href="cert/root_authority.crt" class="btn btn-warning" role="button">Manual Installation</a>
-                    <h4>Running the installer is reccomended for normal users.</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1><i class="fa fa-apple"></i> iOS</h1>
-                    <a href="cert/root_authority.crt" class="btn btn-success" role="button">Install Configuration Profile</a>
-                    <h4>Tap the button and follow the on-screen instructions on your device.</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1><i class="fa fa-android"></i> Android</h1>
-                    <a href="cert/root_authority.crt" class="btn btn-success" role="button">Install Certificate</a>
-                    <h4>Tap the button and follow the on-screen instructions on your device.</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
+<body>
 
 </body>
+<header>
+    <h1>Install Certificates</h1>
+</header>
+<main>
+    <div class="card">
+        <h2>Windows</h2>
+        <p>Download either the installer or the root CA for manual installation. Running the installer is recommended for most users.</p>
+        <a href="cert/RootCAInstaller.exe" class="btn">Installer</a> <a href="cert/root_authority.crt" class="btn">Certificate</a>
+    </div>
+    <div class="card">
+        <h2>Android or iOS</h2>
+        <p>Tap the button below and follow the on-screen instructions on your device!</p>
+        <a href="cert/root_authority.crt" class="btn">Install Certificate</a>
+    </div>
+    <div class="card">
+        <h2>Other Devices</h2>
+        <p>If you know how to add root CAs to your operating system, simply download the certificate with the download button below and add it to your device's certificate store.</p>
+        <a href="cert/root_authority.crt" class="btn">Download</a>
+    </div>
+    <div class="card">
+        <p>If you require assistance installing our certificate on your device, please contact
+          <!-- CHANGE THIS EMAIL -->
+          <a href="mailto:username@example.com">username@example.com</a>
+          or your IT department</p>
+    </div>
+</main>
 
 </html>

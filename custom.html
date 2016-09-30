@@ -1,19 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
 
-<link href="$.CustomPath.$/thumb.png" type="image/png" rel="icon"></link>
+    <link href="thumb.png" type="image/png" rel="icon"></link>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<link href="$.CustomPath.$/css/bootstrap.min.css" rel="stylesheet">
-<link href="$.CustomPath.$/css/modal.css" rel="stylesheet">
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="$.CustomPath.$/js/jquery.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="$.CustomPath.$/js/bootstrap.min.js"></script>
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
-<title>Tower Wi-Fi - Log in</title>
+    <title>Untangle WiFi Login</title>
 </head>
 
 <!-- <body background="background.jpg" onload="FocusOnInput()"> -->
@@ -31,32 +28,34 @@
 ---- the actual values that were extracted from the original request that triggered the captive portal
 ---- authentication page.
 --->
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;" data-controls-modal="login-modal" data-backdrop="static" data-keyboard="false">
-    	  <div class="modal-dialog">
-				<div class="loginmodal-container">
-					<h1>Tower Wi-Fi</h1><br>
-<form "autocomplete="off" method="post" action="/capture/handler.py/authpost">
-<p>Username: &nbsp;<input name="username" id="username" style="width: 200px" type="text"></input></p>
-<p>Password: &nbsp;<input name="password" id="password" style="width: 200px" type="password" autocomplete="off"></input></p>
-<input name="method" id="method" type="hidden" value="$.method.$"></input>
-<input name="nonce" id="nonce" type="hidden" value="$.nonce.$"></input>
-<input name="appid" id="appid" type="hidden" value="$.appid.$"></input>
-<input name="host" id="host" type="hidden" value="$.host.$"></input>
-<input name="uri" id="uri" type="hidden" value="$.uri.$"></input>
-<input name="submit" id="submit" type="submit" value="Login" style="width: 150px; height: 40px"></input>
-</form>
-<div class="login-help">
-<div style="color:red">$.ProblemText.$</div>
-This page is for authorized users only. To log in, you must install a security certificate. If you have not done so already, installation instructions are <a href="$.CustomPath.$/certificate_install.html">here</a>.
-</div>
-</div>
-</div>
-</div>
-<script type="text/javascript">
-    $(window).load(function(){
-        $('#login-modal').modal('show');
-    });
-</script>
+
+<body>
+    <header>
+        <h1>Wifi Portal</h1><br>
+    </header>
+    <div class="modal" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-controls-modal="login-modal" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="loginmodal-container">
+                <form autocomplete="off " method="post" action="/capture/handler.py/authpost ">
+                    <p>Username: &nbsp;<input name="username" id="username" style="width: 200px" type="text" autofocus></input>
+                    </p>
+                    <p>Password: &nbsp;<input name="password" id="password" style="width: 200px" type="password" autocomplete="off"></input>
+                    </p>
+                    <input name="method" id="method" type="hidden" value="$.method.$"></input>
+                    <input name="nonce" id="nonce" type="hidden" value="$.nonce.$"></input>
+                    <input name="appid" id="appid" type="hidden" value="$.appid.$"></input>
+                    <input name="host" id="host" type="hidden" value="$.host.$"></input>
+                    <input name="uri" id="uri" type="hidden" value="$.uri.$"></input>
+                    <input name="submit" id="submit" type="submit" value="Login" style="width: 150px; height: 40px"></input>
+                </form>
+                <div class="login-help">
+                    <div style="color:red">$.ProblemText.$</div>
+                    This page is for authorized users only. To log in, you must install a security certificate. If you have not done so already, installation instructions are <a href="$.CustomPath.$/certificate_install.html">here</a>.
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>

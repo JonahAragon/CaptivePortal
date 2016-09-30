@@ -1,0 +1,91 @@
+/* BEGIN FONTS */
+
+@font-face {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+src: local('Roboto'), local('Roboto-Regular'), url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+src: local('Roboto Bold'), local('Roboto-Bold'), url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+src: local('Roboto Mono'), local('RobotoMono-Regular'), url(../fonts/Roboto_Mono/RobotoMono-Regular.ttf) format('truetype');
+}
+
+@font-face {
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 700;
+src: local('Roboto Mono Bold'), local('RobotoMono-Bold'), url(../fonts/Roboto_Mono/RobotoMono-Bold.ttf) format('truetype');
+}
+
+/* END FONTS */
+
+html {
+  font-family: "Roboto", sans-serif;
+  background-color: #303F9F;
+  color: #212121;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header {
+  font-family: "Roboto Mono", sans-serif;
+  color: #FFFFFF;
+  background-color: #3F51B5;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+  margin: -20px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+div.modal {
+  padding: 5%;
+  margin-top: -70px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+  box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+form {
+  padding-bottom: 20px;
+}
+
+input[type=submit]{
+  background-color: #303F9F;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
+  background-color: #3F51B5;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+input[type=text], input[type=password] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #757575;
+  padding: 5px;
+  outline: none;
+}
+
+input[type=text]:focus, input[type=text]:active,
+input[type=password]:focus, input[type=password]:active {
+  border-bottom: 2px solid #3F51B5;
+}
